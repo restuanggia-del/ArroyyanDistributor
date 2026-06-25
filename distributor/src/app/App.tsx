@@ -8,21 +8,16 @@ import type {
   Customer,
   Profile,
   Page,
-} from "../types";
-import { K, load, persist } from "../lib/storage";
+} from "./types";
+import { K, load, persist } from "./lib/storage";
 import {
   DEF_PROFILE,
   DEF_PRODUCTS,
   DEF_CUSTOMERS,
   DEF_STOCK,
   seedTransactions,
-} from "../data/seed";
+} from "./data/seed";
 
-import LoginPage from "./components/pages/LoginPage";
-import BottomNav from "./components/layout/BottomNav";
-import MobileHeader from "./components/layout/MobileHeader";
-
-import Dashboard from "./components/pages/Dashboard";
 import ProductsPage from "./components/pages/ProductsPage";
 import StockPage from "./components/pages/StockPage";
 import TransactionsPage from "./components/pages/TransactionsPage";
@@ -31,8 +26,11 @@ import HistoryPage from "./components/pages/HistoryPage";
 import ReportsPage from "./components/pages/ReportsPage";
 import PredictionsPage from "./components/pages/PredictionsPage";
 import ProfilePage from "./components/pages/ProfilePage";
+import MobileHeader from "./components/layout/MobileHeader";
+import BottomNav from "./components/layout/BottomNav";
+import LoginPage from "./components/pages/LoginPage";
+import Dashboard from "./components/pages/Dashboard";
 
-// ─── Main App ─────────────────────────────────────────────────────────────────
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(
     () => load<{ ok: boolean }>(K.session, { ok: false }).ok,

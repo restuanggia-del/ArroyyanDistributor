@@ -1,7 +1,5 @@
 import type { Product, Customer, Profile, StockMovement, Transaction } from "../types";
 
-// ─── Seed Data ────────────────────────────────────────────────────────────────
-
 export const DEF_PROFILE: Profile = {
     name: "CV. Arroyyan Distribusi",
     phone: "081234567890",
