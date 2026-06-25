@@ -18,18 +18,18 @@ import {
   seedTransactions,
 } from "./data/seed";
 
-import TransactionsPage from "./components/pages/TransactionsPage";
-import CustomersPage from "./components/pages/CustomersPage";
-import HistoryPage from "./components/pages/HistoryPage";
 import ReportsPage from "./components/pages/ReportsPage";
 import PredictionsPage from "./components/pages/PredictionsPage";
 import ProfilePage from "./components/pages/ProfilePage";
 import MobileHeader from "./components/layout/MobileHeader";
 import BottomNav from "./components/layout/BottomNav";
-import LoginPage from "./components/pages/LoginPage";
 import Dashboard from "./components/pages/Dashboard";
 import ProductsPage from "./components/pages/Productspage";
 import StockPage from "./components/pages/Stockpage";
+import TransactionsPage from "./components/pages/Transactionspage";
+import LoginPage from "./components/pages/Loginpage";
+import CustomersPage from "./components/pages/Customerspage";
+import HistoryPage from "./components/pages/Historypage";
 
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(
@@ -137,7 +137,6 @@ export default function App() {
   return (
     <>
       <Toaster position="top-center" richColors />
-      {/* Mobile shell: single column, content scrolls, bottom nav fixed */}
       <div
         className="flex flex-col h-screen w-full overflow-hidden bg-[#f0f5ff]"
         style={{ fontFamily: "Inter, sans-serif" }}
