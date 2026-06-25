@@ -18,8 +18,6 @@ import {
   seedTransactions,
 } from "./data/seed";
 
-import ReportsPage from "./components/pages/ReportsPage";
-import PredictionsPage from "./components/pages/PredictionsPage";
 import ProfilePage from "./components/pages/ProfilePage";
 import MobileHeader from "./components/layout/MobileHeader";
 import BottomNav from "./components/layout/BottomNav";
@@ -30,6 +28,8 @@ import TransactionsPage from "./components/pages/Transactionspage";
 import LoginPage from "./components/pages/Loginpage";
 import CustomersPage from "./components/pages/Customerspage";
 import HistoryPage from "./components/pages/Historypage";
+import PredictionsPage from "./components/pages/Predictionspage";
+import ReportsPage from "./components/pages/Reportspage";
 
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(
